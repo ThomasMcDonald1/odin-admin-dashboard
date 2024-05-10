@@ -1,0 +1,151 @@
+:root
+{
+    --deep-sea-blue: #264653;
+    --persian-green: #2a9d8f;
+    --powder-blue: #a8dadc;
+    --soft-mint: #e9f5f5;
+    --celestial-green: #6ab7a8;
+    --sunset-coral: #ff6b6b;
+}
+
+/************ html and body ************/
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    min-height: 100%;
+}
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+/************ outer containers ************/
+
+.primary-container
+{
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+    background-color: var(--text-dark-slate);
+}
+
+.header
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    background-color: var(--soft-mint);
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    gap: 5px;
+}
+
+.main-content
+{
+    background-color: var(--powder-blue);
+    grid-area: 2 / 2 / 6 / 6;
+}
+
+/************ sidebar content styles ************/
+
+.sidebar
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    background-color: var(--deep-sea-blue);
+}
+
+.sb-list
+{
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr 3fr;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-items: start;
+    align-items: center;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.sb-item
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sb-item a
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: var(--soft-mint);
+}
+
+.sb-icon
+{
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    
+}
+
+.sb-text
+{
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+/************ header content styles ************/
+
+.header-top
+{
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.header-bottom
+{
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+}
+
+.search-group
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 24px minmax(150px, 1fr);
+    gap: 5px;
+}
+
+.search-group img
+{
+    width: 24px;
+    height: 24px;
+}
+
+.search
+{
+    
+    border-radius: 15px;
+    border-color: rgba(0,0,0,0);
+    background-color: var(--powder-blue);
+    width: 90%;
+}
+
+/************ main content styles ************/
