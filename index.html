@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Odin Dashboard</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -66,16 +66,140 @@
                         <input class="search" type="search" name="search" placeholder="Search Here" aria-label="Search through content">
                     </form>
                 </div>
+                
                 <div class="profile-group">
-
+                    <a href="#notification">
+                        <img class="bell-icon" src="icons/bell.svg" alt="Notification">
+                    </a>
+                    <a href="#profile">
+                        <img class="user-logo" src="imgs/odin.png" alt="user-logo">
+                    </a> 
+                    <span class="logo-text">
+                        Odin Project
+                    </span>
                 </div>
             </div>
-            <div class="header-bottom">
 
+
+            <div class="header-bottom">
+                <div class="welcome-group">
+                    <img class="welcome-img" src="imgs/odin.png" alt="Happy Odin">
+                    <div class="welcome-txt-group">
+                        <span class="welcome-txt">Greetings,</span>
+                        <span class="user-name">Odin</span>
+                    </div>
+                    <span class="user-id">(@Odin-Project)</span>
+                </div>
+
+                <div class="button-group">
+                    <button class="header-button">
+                        New
+                    </button>
+                    <button class="header-button">
+                        Upload
+                    </button>
+                    <button class="header-button">
+                        Share
+                    </button>
+                </div>
             </div>
         </div>
         <div class="main-content">
-            
+            <div class="projects-area">
+                <p class="projects-label-text">Your Projects</p>
+                <div class="project-card">
+                    <a href="https://thomasmcdonald1.github.io/odin-calculator/" class="project-link">
+                        <p class="card-header">
+                            Odin Calculator
+                        </p>
+                    </a>
+                    <p class="card-body">
+                        This is my solution to the final project from the Odin Foundations courses. Come check it out!
+                    </p>
+                </div>
+                <div class="project-card">
+                    <a href="https://thomasmcdonald1.github.io/odin-etch-a-sketch/" class="project-link">
+                        <p class="card-header">
+                            Odin Etch-a-Sketch
+                        </p>
+                    </a>
+                    <p class="card-body">
+                        A really cool drawing interface I designed with a customizable layout. Check out the rainbow mode, too!
+                    </p>
+                </div>
+                <div class="project-card">
+                    <a href="https://thomasmcdonald1.github.io/odin-signup-form/" class="project-link">
+                        <p class="card-header">
+                            Odin Signup Form
+                        </p>
+                    </a>
+                    <p class="card-body">
+                        Showcasing a styled form page I designed. Register and submit the form for a chance to win something cool.
+                    </p>  
+                </div>
+                <div class="project-card">
+                    <a href="https://thomasmcdonald1.github.io/odin-rock-paper-scissors-ui/" class="project-link">
+                        <p class="card-header">
+                            Odin Rock-Paper-Scissors
+                        </p>
+                    </a>
+                    <p class="card-body">
+                        Arguing over who should make a decision? Play rock paper scissors!
+                    </p>  
+                </div>
+                <div class="project-card">
+                    <a href="https://thomasmcdonald1.github.io/odin-landing-page/index.html" class="project-link">
+                        <p class="card-header">
+                            Odin Landing Page
+                        </p>
+                    </a>
+                    <p class="card-body">
+                        A simple landing page project. Cool lions included!
+                    </p>   
+                </div>
+                <div class="project-card">
+                    <a href="https://thomasmcdonald1.github.io/odin-recipes/" class="project-link">
+                        <p class="card-header">
+                            Odin Recipes
+                        </p>
+                    </a>
+                    <p class="card-body">
+                        This was my first completed Odin project. Want to make some delicious pizza? Or perhaps a tasty seared steak? Check out my recipes page!
+                    </p>   
+                </div>
+            </div>
+            <div class="extras-area">
+                <p class="announcements-label-text">Announcements</p>
+
+                <div class="announcements-card" id="announcements-card">
+                    <div class="announcement">
+                        <p class="announcement-header">Site Maintenance</p>
+                        <p class="announcement-body">
+                            Vestibulum condimentum tellus lacus, in accumsan elit 
+                            maximum ac. Donec hendrerit sodales congue...
+                        </p>
+                        <hr class="separator">
+                    </div>
+                    <div class="announcement">
+                        <p class="announcement-header">Community Share Day</p>
+                        <p class="announcement-body">
+                            Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum acctumsan porttitor...
+                        </p>
+                        <hr class="separator">
+                    </div>
+                    <div class="announcement">
+                        <p class="announcement-header">Updated Privacy Policy</p>
+                        <p class="announcement-body">
+                            Phasellus efficitur nisi eget elit consectetur, eget condumentum ante auctor. Cras fringilla sagittis sem in mattis...
+                        </p>
+                    </div>
+                </div>
+                <p class="trending-label-text">Trending</p>
+
+                <div class="trending-card" id="trending-card">
+                    
+                </div>
+            </div>
         </div>
     </div>
 </body>
