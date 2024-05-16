@@ -37,6 +37,11 @@ a
     text-decoration: none;
 }
 
+hr
+{
+    margin-top: 30px;
+}
+
 /************ outer containers ************/
 
 .primary-container
@@ -370,9 +375,9 @@ a
 
 }
 
-.sb-text, .logo-text, .welcome-txt, .user-name, .button-text, .projects-label-text, .announcements-label-text, .trending-label-text, .user-id
+.sb-text, .logo-text, .welcome-txt, .user-name, .button-text, .projects-label-text, .announcements-label-text, .trending-label-text, .user-id, .announcement-header, .announcement-body
 {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .project-link, .card-body
@@ -410,7 +415,7 @@ a
 
 .announcement-header, .announcement-body
 {
-    font-size: 10px;
+    font-size: 0.85rem;
     padding-left: 10px;
     padding-right: 10px;
 }
