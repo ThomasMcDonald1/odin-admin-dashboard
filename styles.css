@@ -1,3 +1,14 @@
+@font-face
+{
+    font-family: unispace;
+    src: url(fonts/unispace.otf);
+}
+
+@font-face
+{
+    font-family: creato;
+    src: url(fonts/creato-display.otf);
+}
 
 :root
 {
@@ -373,9 +384,14 @@ hr
 
 }
 
-.sb-text, .logo-text, .welcome-txt, .user-name, .button-text, .projects-label-text, .announcements-label-text, .trending-label-text, .user-id, .announcement-header, .announcement-body
+.sb-text, .logo-text, .welcome-txt, .user-name, .button-text, .projects-label-text, .announcements-label-text, .trending-label-text, .user-id, .announcement-header, .project-link, .header-button, .search
 {
-    font-family:'Courier New', Courier, monospace;
+    font-family: unispace, 'Courier New', Courier, monospace;
+}
+
+.card-body, .announcement-body
+{
+    font-family: creato;
 }
 
 .project-link, .card-body
@@ -387,7 +403,7 @@ hr
 {
     color: var(--deep-sea-blue);
     font-weight: bold;
-    font-size: 0.86rem;
+    font-size: 0.7rem;
     padding-top: 15px;
 }
 
