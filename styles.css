@@ -130,7 +130,7 @@ hr
 
 .sb-text
 {
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 0.95rem, 1rem);
     margin-top: 6px;
 }
 
@@ -181,7 +181,7 @@ hr
     border: none;
     width: clamp(55%, 75%, 85%);
     height: 30px;
-    font-size: 0.75rem;
+    font-size: clamp(0.45rem, 0.745rem, 0.75rem);
     padding-left: 10px;
     box-shadow: inset 0px 0px 4px 1px rgba(38, 70, 83, 0.25);
 }
@@ -211,7 +211,7 @@ hr
 .logo-text
 {
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: clamp(0.5rem, 0.8rem, 0.81rem);
     padding-top: 16px;
     white-space: nowrap;
     color:#264653;
@@ -246,13 +246,13 @@ hr
 
 .welcome-txt
 {
-    font-size: 0.75rem;
+    font-size: clamp(0.5rem, 0.75rem, 0.76rem);
     color:var(--deep-sea-blue);
 }
 
 .user-name
 {
-    font-size: 1.5rem;
+    font-size: clamp(0.5rem, 1.5rem, 1.51rem);
     color: var(--deep-sea-blue);
 }
 
@@ -384,12 +384,12 @@ hr
 
 }
 
-.sb-text, .logo-text, .welcome-txt, .user-name, .button-text, .projects-label-text, .announcements-label-text, .trending-label-text, .user-id, .announcement-header, .project-link, .header-button, .search
+.sb-text, .logo-text, .welcome-txt, .user-name, .button-text, .projects-label-text, .announcements-label-text, .trending-label-text, .user-id, .header-button, .search
 {
-    font-family: unispace, 'Courier New', Courier, monospace;
+    font-family: creato, 'Courier New', Courier, monospace;
 }
 
-.card-body, .announcement-body
+.card-body, .announcement-body, .announcement-header, .project-link
 {
     font-family: creato;
 }
@@ -403,7 +403,7 @@ hr
 {
     color: var(--deep-sea-blue);
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: clamp(0.5rem, 0.7rem, 0.75rem);
     padding-top: 15px;
 }
 
@@ -412,7 +412,7 @@ hr
     margin-right: 10px;
     color:#2f534c;
     line-height: 18px;
-    font-size: 0.85rem;
+    font-size: clamp(0.5rem, 0.65rem, 0.651rem);
 }
 
 .announcements-card
@@ -429,7 +429,7 @@ hr
 
 .announcement-header, .announcement-body
 {
-    font-size: 0.55rem;
+    font-size: clamp(0.5rem, 0.55rem, 0.51rem);
     padding-left: 10px;
     padding-right: 10px;
 }
