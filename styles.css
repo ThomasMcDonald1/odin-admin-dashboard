@@ -18,6 +18,7 @@
     --soft-mint: #e9f5f5;
     --celestial-green: #6ab7a8;
     --sunset-coral: #ff6b6b;
+    --icon: #356274;
 }
 
 /************ html and body ************/
@@ -41,6 +42,11 @@ html, body
 p
 {
     overflow-wrap: break-word;
+}
+
+p, span
+{
+    font-family: creato, Arial, Helvetica, sans-serif;
 }
 
 a
@@ -88,6 +94,7 @@ hr
     grid-column: 1 / 2;
     grid-row: 1 / 6;
     background-color: var(--deep-sea-blue);
+    border-right: 1px solid var(--sunset-coral);
 }
 
 .sb-list
@@ -153,7 +160,7 @@ hr
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr minmax(150px, 350px);
-    
+    border-bottom: 2px solid var(--sunset-coral);
 }
 
 .search-group
@@ -260,6 +267,7 @@ hr
 {
     font-size: 1rem;
     padding-top: 14px;
+    color: var(--deep-sea-blue);
 }
 
 .user-name, .user-id
@@ -295,6 +303,15 @@ hr
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-template-rows: 1fr;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.cards-label
+{
+    font-weight: bold;
+    color: var(--deep-sea-blue);
+    padding-left: 10px;
 }
 
 /************ project cards ************/
@@ -319,9 +336,48 @@ hr
     height: 100%;
 }
 
+.project-card
+{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.card-header
+{
+    color: var(--persian-green);
+    font-weight: bold;
+}
+
+.card-body
+{
+    color: var(--celestial-green);
+}
+
+.project-icon-group
+{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: right;
+    width: 95%;
+}
+
+.project-card-icon
+{
+    width: 25px;
+    height: 25px;
+}
+
 .project-card, .announcement-card, .trending-card 
 {
     background-color: var(--soft-mint);
+    border-left: 3px solid var(--sunset-coral);
     border-radius: 20px;
 }
 
@@ -362,6 +418,9 @@ hr
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
 }
 
 .announcement-card
@@ -374,14 +433,31 @@ hr
 
 .announcement
 {
-    padding-left: 5px;
+    padding-left: 10px;
     padding-right: 5px;
 }
 
 .announcement-header
 {
     font-weight: bold;
+    color: var(--persian-green);
+    font-size: 0.85rem;
 }
+
+.announcement-body
+{
+    color: var(--celestial-green);
+    font-size: 0.85rem;
+}
+
+.separator
+{
+    color:#ff9c9c;
+    background-color: #ff9c9c;
+    border: 1px solid #ff9c9c;
+}
+
+
 
 .trend-group
 {
@@ -394,8 +470,8 @@ hr
 
 .trend-img
 {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin-left: 25px
 }
